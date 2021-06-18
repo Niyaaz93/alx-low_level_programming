@@ -16,15 +16,15 @@ for (first = 0; first <= 9; first++)
 {
 for (second = first + 1; second <= 9; second++)
 {
-  putchar(second + '0');
-  putchar(first + '0');
+putchar(second + '0');
+putchar(first + '0');
 
 if (second == 8 && first == 9)
 {
 continue;
 }
 putchar(',');
-putchat(' ');
+putchar(' ');
 }
 
 }
