@@ -9,13 +9,15 @@
 
 int main(void)
 {
-  char[] alpha = new char[26];
+int i;
+char letters[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+		     'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
+		     'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
 
-  for(int i = 0; i < 26; i++)
-      {
-      alpha[i] = (char)(65 + i)
-      }
-  
-  putchar(alpha[i])
+for (i = 0; i < 26; i++)
+{
+putchar("%c", letters[i]);
+}
+
 return (0);
 }
