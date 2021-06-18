@@ -17,6 +17,9 @@ char letters[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 for (i = 0; i < 26; i++)
 {
 putchar(letters[i]);
+}
+for (i = 0; i < 26; i++)
+}
 putchar(toupper(letters[i]));
 }
 
