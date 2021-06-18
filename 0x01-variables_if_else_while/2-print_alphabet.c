@@ -16,7 +16,8 @@ char letters[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 
 for (i = 0; i < 26; i++)
 {
-putchar("%c", letters[i]);
+putchar(letter[i]);
+putchar("\n");
 }
 
 return (0);
