@@ -10,7 +10,7 @@
 int main(void)
 {
 int i;
- char letters[26] = {'a', 'b', 'c', 'd', 'f', 'g', 'h',
+char letters[26] = {'a', 'b', 'c', 'd', 'f', 'g', 'h',
 		     'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
 		     'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
 
