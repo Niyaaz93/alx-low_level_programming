@@ -13,7 +13,7 @@ int first;
 int second;
 int third;
 
-for (third = 0; third <=9; third++)
+for (third = 0; third <= 9; third++)
 {
 for (second = third + 1; second <= 9; second++)
 {
