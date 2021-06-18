@@ -9,12 +9,13 @@
 
 int main(void)
 {
-char c, result;
+  char[] alpha = new char[26];
 
-putchar (c);
-result = tolower(c);
-putchar(result "\n");
-
+  for(int i = 0; i < 26; i++)
+      {
+      alpha[i] = (char)(65 + i)
+      }
+  
+  putchar(alpha[i])
 return (0);
 }
-
