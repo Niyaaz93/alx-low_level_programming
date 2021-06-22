@@ -51,3 +51,8 @@ void jack_bauer(void);
  * Function to print out the 9 times table
  */
 void times_table(void);
+
+/**
+ * Function to add 2 integers
+ */
+int add(int, int);
