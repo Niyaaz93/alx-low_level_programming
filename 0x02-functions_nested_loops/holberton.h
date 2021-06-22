@@ -11,3 +11,8 @@ int _putchar(char c);
  * Function to print the lowercase alphabet
  */
 void print_alphabet(void);
+
+/**
+ * Function to print the lowercase alphabet 10 times
+ */
+void print_alphabet_x10(void)
