@@ -26,3 +26,8 @@ int _islower(int c);
  * Function to check for alphabetic character
  */
 int _isalpha(int c);
+
+/**
+ * Function that prints the sign of a number
+ */
+int print_sign(int n);
