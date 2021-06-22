@@ -46,3 +46,8 @@ int print_last_digit(int);
  * Function that prints every minute of the day starting from 00:00 until 23:59
  */
 void jack_bauer(void);
+
+/**
+ * Function to print out the 9 times table
+ */
+void times_table(void);
