@@ -17,6 +17,7 @@ int print_last_digit(int a)
 	}
 
 	last = a % 10;
+	_putchar('o' + (last));
 	return (last);
 
 	_putchar('\n');
