@@ -22,6 +22,7 @@ void times_table(void)
 				if (col != 9)
 				{
 					_putchar(',');
+					_putchar(' ');
 				}
 			}
 
@@ -31,7 +32,6 @@ void times_table(void)
 				if (col != 9)
 				{
 					_putchar(',');
-					_putchar(' ');
 					_putchar(' ');
 				}
 			}
