@@ -5,6 +5,7 @@
  * Description: function checks for lowercase characters
  * and returns 1 if c character is lowercase
  * and returns 0 otherwise
+ * @c - character in ASCII code
  * Return: 1 if c is lowercase, or 0 otherwise
  */
 
@@ -19,5 +20,5 @@ int _islower(int c)
     {
       return (0);
     }
-  _putchar('n');
+  _putchar('\n');
 }
