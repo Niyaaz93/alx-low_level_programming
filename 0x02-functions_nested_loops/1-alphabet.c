@@ -1,11 +1,10 @@
 #include "holberton.h"
 
 /**
- * Main will be used to check the file
  * Description: printing all lower case
  * letters of the alphabet using ASCII values
  *
- * Return: Always 0 (successful)
+ * Return: void (successful)
  */
 
 void print_alphabet(void)
