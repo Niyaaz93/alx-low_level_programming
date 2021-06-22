@@ -2,7 +2,7 @@
 
 /**
  * Main will be used to check the file
- * Description - printing all lower case
+ * Description: printing all lower case
  * letters of the alphabet using ASCII values
  *
  * Return: Always 0 (successful)
