@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * 24_hours - printing every minute of the day
+ * jack_bauer - printing every minute of the day
  * Description: Printing every minute of the day like
  * in the Jack Bauer series.
  * Return: void (successful)
