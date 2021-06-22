@@ -16,3 +16,8 @@ void print_alphabet(void);
  * Function to print the lowercase alphabet 10 times
  */
 void print_alphabet_x10(void);
+
+/**
+ * Function to check for lowercase characters
+ */
+int _islower(int c);
