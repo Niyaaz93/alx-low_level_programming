@@ -7,3 +7,7 @@
  */
 int _putchar(char c);
 
+/**
+ * Function to print the lowercase alphabet
+ */
+void print_alphabet(void);
