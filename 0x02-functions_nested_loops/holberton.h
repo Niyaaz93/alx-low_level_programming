@@ -21,3 +21,8 @@ void print_alphabet_x10(void);
  * Function to check for lowercase characters
  */
 int _islower(int c);
+
+/**
+ * Function to check for alphabetic character
+ */
+int _isalpha(int c);
