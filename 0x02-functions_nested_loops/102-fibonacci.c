@@ -16,14 +16,19 @@ int main(void)
 	int n = 50;
 	unsigned long nextterm = term1 + term2;
 
-	printf("%d, %d, ", term1, term2);
+	printf("%lu, %lu, ", term1, term2);
 
 	for (i = 1; i <= n; i++)
 	{
-		printf("%d, ", nextterm);
+		printf("%lu, ", nextterm);
 		term1 = term2;
 		term2 = nextterm;
 		nextterm = term1 + term2;
+
+		if ( i == 50)
+		{
+			printf("\n");
+		}
 	}
 	return (0);
 }
