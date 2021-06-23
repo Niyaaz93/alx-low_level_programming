@@ -6,10 +6,10 @@
  * Description: function that computes the and prints
  * the sums of all the multiples of 3 and 5 below 1024
  * followed by a new line
- * Return: the sum of the multiples
+ * Return: Always 0 (successful)
  */
 
-int natural(int sum)
+int main(void)
 {
 	int i;
 	int a;
@@ -25,5 +25,7 @@ int natural(int sum)
 			sum = sum + i;
 		}
 	}
-	return (sum);
+	printf("%d", sum);
+	
+	return (0);
 }
