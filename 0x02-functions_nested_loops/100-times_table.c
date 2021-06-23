@@ -23,26 +23,18 @@ void print_times_table(int n)
 			for (col = 1; col <= n; col++)
 			{
 				prod = row * col;
-				putchar(',');
-				putchar(' ');
 
 				if (prod < 10)
 				{
-					putchar(' ');
-					putchar(' ');
-					putchar(prod + '0');
+					printf("%d,   ", prod);
 				}
 				else if (prod > 99)
 				{
-					putchar((prod / 100) + '0');
-					putchar((prod % 100) + '0');
-					putchar((prod % 10) + '0');
+					printf("%d, ", prod);
 				}
 				else
 				{
-					putchar(' ');
-					putchar((prod / 10) + '0');
-					putchar((prod % 10) + '0');
+					printf("%d,  ", prod);
 				}
 			}
 			putchar('\n');
