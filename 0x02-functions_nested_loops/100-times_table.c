@@ -14,27 +14,43 @@ void print_times_table(int n)
 {
 	int row, col, prod;
 
-	for (row = 0; row <= n; row++)
+	if (n < 15 && n > 0)
 	{
-		putchar(48);
-		printf(",   ");
-
-		for (col = 1; col <= n; col++)
+		for (row = 0; row <= n; row++)
 		{
-			prod = row * col;
-			if (prod < 10)
+			putchar(48);
+
+			for (col = 1; col <= n; col++)
 			{
-				printf("%d,   ", prod);
+				prod = row * col;
+				putchar(',');
+				putchar(' ');
+
+				if (prod < 10)
+				{
+					putchar(' ');
+					putchar(' ');
+					putchar(prod + '0');
+				}
+				else if (prod > 99)
+				{
+					putchar((prod / 100) + '0');
+					putchar((prod % 100) + '0');
+					putchar((prod % 10) + '0');
+				}
+				else
+				{
+					putchar(' ');
+					putchar((prod / 10) + '0');
+					putchar((prod % 10) + '0');
+				}
 			}
-			else if (prod > 99)
-			{
-				printf("%d, ", prod);
-			}
-			else
-			{
-				printf("%d,  ", prod);
-			}
+			putchar('\n');
 		}
-		printf("\n");
+	}
+
+	else if (n == 0)
+	{
+		printf("%d\n", n);
 	}
 }
