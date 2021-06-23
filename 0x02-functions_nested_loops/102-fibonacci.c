@@ -20,12 +20,16 @@ int main(void)
 
 	for (i = 1; i < (n - 1); i++)
 	{
-		printf("%lu, ", nextterm);
+		printf("%lu", nextterm);
 		term1 = term2;
 		term2 = nextterm;
 		nextterm = term1 + term2;
 
-		if (i == (n - 1))
+		if (i < (n - 2))
+		{
+			printf(", ");
+		}
+		else
 		{
 			printf("\n");
 		}
