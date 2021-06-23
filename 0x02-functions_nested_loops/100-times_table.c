@@ -25,10 +25,10 @@ void print_times_table(int n)
 				prod = row * col;
 				putchar(',');
 				putchar(' ');
-				putchar(' ');
 
 				if (prod < 10)
 				{
+					putchar(' ');
 					putchar(' ');
 					putchar(prod + '0');
 				}
@@ -40,6 +40,7 @@ void print_times_table(int n)
 				}
 				else
 				{
+					putchar(' ');
 					putchar((prod / 10) + '0');
 					putchar((prod % 10) + '0');
 				}
