@@ -18,14 +18,14 @@ int main(void)
 
 	printf("%lu, %lu, ", term1, term2);
 
-	for (i = 1; i < n; i++)
+	for (i = 1; i < (n - 1); i++)
 	{
 		printf("%lu, ", nextterm);
 		term1 = term2;
 		term2 = nextterm;
 		nextterm = term1 + term2;
 
-		if (i == 50)
+		if (i == (n - 1))
 		{
 			printf("\n");
 		}
