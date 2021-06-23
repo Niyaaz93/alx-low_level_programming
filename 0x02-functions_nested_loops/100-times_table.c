@@ -20,6 +20,7 @@ void print_times_table(int n)
 
 		for (col = 1; col <= n; col++)
 		{
+			prod = row * col;
 			if (prod < 10)
 			{
 				printf("%d,   ", prod);
