@@ -11,10 +11,10 @@
 int main(void)
 {
 	int i;
-	int term1 = 1;
-	int term2 = 2;
+	unsigned long term1 = 1;
+	unsigned long term2 = 2;
 	int n = 50;
-	int nextterm = term1 + term2;
+	unsigned long nextterm = term1 + term2;
 
 	printf("%d, %d, ", term1, term2);
 
