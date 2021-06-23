@@ -16,6 +16,8 @@ int main(void)
 	int n = 50;
 	int nextterm = term1 + term2;
 
+	printf("%d, %d, ", term1, term2);
+
 	for (i = 1; i < n; ++i)
 	{
 		printf("%d, ", nextterm);
