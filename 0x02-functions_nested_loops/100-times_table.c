@@ -34,10 +34,16 @@ void print_times_table(int n)
 					putchar(' ');
 					putchar(prod + '0');
 				}
-
+				else if (prod > 99)
+				{
+					putchar((prod / 100) + '0');
+					putchar((prod / 10) + '0');
+					putchar((prod % 10) + '0');
+				}
 				else
 				{
-					printf("%d", prod);
+					putchar((prod / 10) + '0');
+					putchar((prod % 10) + '0');
 				}
 			}
 			putchar('\n');
