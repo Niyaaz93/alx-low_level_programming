@@ -67,3 +67,8 @@ void print_to_98(int n);
  * Dont do anything if n is >15 or 0
  */
 void print_times_table(int n);
+
+/**
+ * Function to print all the multiples of 3 or 5 below 1024
+ */
+int natural(int sum);
