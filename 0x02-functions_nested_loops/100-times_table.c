@@ -31,7 +31,7 @@ void print_times_table(int n)
 					putchar(' ');
 					if (prod <= 9)
 					{
-						putchar(',');
+						putchar(' ');
 						putchar(' ');
 						putchar(prod + '0');
 					}
