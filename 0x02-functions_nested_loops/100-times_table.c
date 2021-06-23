@@ -17,6 +17,7 @@ void print_times_table(int n)
 	for (row = 0; row <= n; row++)
 	{
 		putchar(48);
+		printf(",   ");
 
 		for (col = 1; col <= n; col++)
 		{
