@@ -56,3 +56,8 @@ void times_table(void);
  * Function to add 2 integers
  */
 int add(int, int);
+
+/**
+ * Function to print all natural numbers from n up until 98
+ */
+void print_to_98(int n);
