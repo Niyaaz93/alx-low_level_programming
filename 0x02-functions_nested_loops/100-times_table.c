@@ -18,11 +18,11 @@ void print_times_table(int n)
 
 	if (n != 15 && n != 0)
 	{
-		for (row = 0; row < n; row++)
+		for (row = 0; row <= n; row++)
 		{
 			putchar(48);
 
-			for (col = 1; col < n; col++)
+			for (col = 1; col <= n; col++)
 			{
 				prod = row * col;
 				putchar(',');
