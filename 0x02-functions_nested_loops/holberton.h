@@ -61,3 +61,9 @@ int add(int, int);
  * Function to print all natural numbers from n up until 98
  */
 void print_to_98(int n);
+
+/**
+ * Function to print the n times table
+ * Dont do anything if n is >15 or 0
+ */
+void print_times_table(int n);
