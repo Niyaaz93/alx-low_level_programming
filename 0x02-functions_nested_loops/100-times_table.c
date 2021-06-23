@@ -12,9 +12,7 @@
 
 void print_times_table(int n)
 {
-	int row;
-	int col;
-	int prod;
+	int row, col, prod;
 
 	if (n < 15 && n > 0)
 	{
@@ -37,7 +35,7 @@ void print_times_table(int n)
 				else if (prod > 99)
 				{
 					putchar((prod / 100) + '0');
-					putchar((prod / 10) + '0');
+					putchar((prod % 100) + '0');
 					putchar((prod % 10) + '0');
 				}
 				else
