@@ -14,7 +14,7 @@ int main(void)
 	int term1 = 1;
 	int term2 = 2;
 	int n = 50;
-	int nexterm = term1 + term2;
+	int nextterm = term1 + term2;
 
 	for (i = 1; i < n; ++i)
 	{
