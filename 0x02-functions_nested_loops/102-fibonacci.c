@@ -18,7 +18,7 @@ int main(void)
 
 	printf("%d, %d, ", term1, term2);
 
-	for (i = 1; i <= n; ++i)
+	for (i = 1; i <= (n/2); ++i)
 	{
 		printf("%d, ", nextterm);
 		term1 = term2;
