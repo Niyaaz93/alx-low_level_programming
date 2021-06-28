@@ -40,7 +40,7 @@ void rev_string(char *s)
 			swap = *(s+i);
 			newpos = (strlen - 1) - i;
 			*(s + i) = *(s + newpos);
-			*(s + newpos) = swap
+			*(s + newpos) = swap;
 		}
 	}
 }
