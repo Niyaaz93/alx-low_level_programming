@@ -19,12 +19,12 @@ int _strlen(char *s)
 }
 
 /**
- * print_rev - prints string in reverse followed by newline
- * @s: string to be reversed
+ * rev_string - reverses the string
+ * @s - string to be reversed
  *
  * Return: void (successful)
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i;
 	int strlen = 0;
