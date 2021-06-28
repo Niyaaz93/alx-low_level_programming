@@ -28,12 +28,19 @@ void rev_string(char *s)
 {
 	int i;
 	int strlen = 0;
+	int swap = 0;
+	int newpos = 0;
 
 	strlen = _strlen(s);
 
-	for (i = (strlen - 1); i >= 0; i--)
+	if (strlen > 0)
 	{
-		_putchar(*(s + i));
+		for (i = 0; i < strlen; i++)
+		{
+			swap = *(s+i);
+			newpos = (len - 1) - i;
+			*(s + i) = *(s + newpos);
+			*(s + newpos) = swap
+		}
 	}
-	_putchar('\n');
 }
