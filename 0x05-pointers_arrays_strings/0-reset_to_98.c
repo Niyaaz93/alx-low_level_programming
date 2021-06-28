@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - updates the value of the parameter to 98
- * @n - pointer of type int accepted by function
+ * @n: pointer of type int accepted by function
  *
  * Return: void (successful)
  */
