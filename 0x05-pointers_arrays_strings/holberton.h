@@ -7,6 +7,7 @@
  */
 int _putchar(char c);
 
+
 /**
  * reset_to_98 - updates the value of the paramter to 98
  * @n - the pointer accepted by the function
@@ -14,3 +15,13 @@ int _putchar(char c);
  * Return: void (successful)
  */
 void reset_to_98(int *n);
+
+
+/**
+ * swap_int - swaps the valus of 2 integers
+ * @a - first integer to be swapped
+ * @b - second integer to be swapped
+ *
+ * Return: void (successful)
+ */
+void swap_int(int *a, int *b);
