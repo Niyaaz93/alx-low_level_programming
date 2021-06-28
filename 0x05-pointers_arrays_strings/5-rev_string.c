@@ -38,7 +38,7 @@ void rev_string(char *s)
 		for (i = 0; i < strlen; i++)
 		{
 			swap = *(s+i);
-			newpos = (len - 1) - i;
+			newpos = (strlen - 1) - i;
 			*(s + i) = *(s + newpos);
 			*(s + newpos) = swap
 		}
