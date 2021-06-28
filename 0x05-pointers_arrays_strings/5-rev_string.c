@@ -20,7 +20,7 @@ int _strlen(char *s)
 
 /**
  * rev_string - reverses the string
- * @s - string to be reversed
+ * @s: string to be reversed
  *
  * Return: void (successful)
  */
@@ -35,4 +35,5 @@ void rev_string(char *s)
 	{
 		_putchar(*(s + i));
 	}
+	_putchar('\n');
 }
