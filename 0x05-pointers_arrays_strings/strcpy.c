@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * *_strcpy - copies the string pointed to, to the buffer point
@@ -15,6 +16,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		*(dest + i) = *(src + i);
 	}
+
 	*(dest + i) = '\0';
 	return (dest);
 }
