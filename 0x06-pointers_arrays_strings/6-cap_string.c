@@ -19,8 +19,11 @@ char *cap_string(char *str)
 			    || str[i - 1] == 40 || str[i - 1] == 41
 			    || str[i - 1] == 123 || str[i - 1] == 125
 			    || str[i - 1] == 32 || str[i - 1] == '\n'
-			    || str[i - 1] == '\t'))
+			    || str[i - 1] == '\t' || i == 0))
+		{
 			str[i] = str[i] - 97 + 65;
+		}
+		
 		i++;
 	}
 
