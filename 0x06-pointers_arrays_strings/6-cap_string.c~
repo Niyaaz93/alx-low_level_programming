@@ -1,0 +1,12 @@
+#include "holberton.h"
+
+/**
+ * cap_string - capitalises all words of a string
+ * @str: string accepted by function
+ *
+ * Return: char
+ */
+char *cap_string(char *)
+{
+	
+}
