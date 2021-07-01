@@ -12,16 +12,10 @@ char *leet(char *str)
 	int j;
 	char s1[] = "aAeEoOtTlL";
 	char s2[] = "4433007711";
-	int len = 0;
-
-	while (s1[len] != '\0')
-	{
-		len++;
-	}
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j < len; j++)
+		for (j = 0; j < 10; j++)
 		{
 			if (str[i] == s1[j])
 			{
