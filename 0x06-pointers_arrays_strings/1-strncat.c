@@ -23,7 +23,7 @@ char *_strncat(char *dest, char *src, int n)
 		dest[lend] = src[lens];
 
 		lend++;
-		lens++
+		lens++;
 	}
 
 	dest[lend] = '\0';
