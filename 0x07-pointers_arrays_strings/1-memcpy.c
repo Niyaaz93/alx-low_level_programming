@@ -1,3 +1,5 @@
+#include "holberton.h"
+
 /**
  * _memcpy - function that copies memory area
  * @dest: memory area to which memory is copied
