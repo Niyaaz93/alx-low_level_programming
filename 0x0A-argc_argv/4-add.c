@@ -1,26 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
-#include <stdbool.h>
 #include <stdlib.h>
-
-/**
- * num_check - checking if each argv in the array is a number
- * @argva: argv value
- *
- * Return: true only if the entire string are numbers, else returns false
- */
-bool num_check(char *argva)
-{
-	int j = 0;
-
-	for (j = 0; argva[j]; j++)
-	{
-		if (!(argva[j] >= '0' && argva[j] <= '9'))
-			return (0);
-	}
-
-	return (1);
-}
+#include <ctype.h>
 
 /**
  * main - Program that adds positive numbers
@@ -32,34 +13,24 @@ bool num_check(char *argva)
 
 int main (int argc, char *argv[])
 {
-	int i = 1;
+	int i;
+	int j;
 	int sum = 0;
 
-	if (argc == 1)
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-
-		return (0);
-	}
-
-	while (i < argc)
-	{
-		if (num_check(argv[i]))
+		for (j = 0; argv[i][j]; j++)
 		{
-			sum = sum + atoi(argv[i]);
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 
-		else
-		{
-			printf("Error\n");
-
-			return (1);
-		}
-
-		i++;
+		sum = sum + atoi(argv[i]);
 	}
 
 	printf("%d\n", sum);
-
 	return (0);
 }
