@@ -9,7 +9,7 @@
  *
  * Return: true only if the entire string are numbers, else returns false
  */
-bool num_check(char *argva)
+bool num_check(char *argva[])
 {
 	int j = 0;
 
@@ -29,7 +29,7 @@ bool num_check(char *argva)
  * Return: o (successful)
  */
 
-int main (int argc, char *argv)
+int main (int argc, char *argv[])
 {
 	int i;
 	int sum = 0;
