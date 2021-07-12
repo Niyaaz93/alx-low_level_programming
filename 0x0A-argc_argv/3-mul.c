@@ -12,29 +12,24 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
 	int num1;
 	int num2;
 	int mul;
 
-	for (i = 1; i < 3; i++)
+	if (argc != 3)
 	{
+		printf("Error\n");
+		return (1);
+	}
 
-		if (argc != 3)
-		{
-			printf("Error\n");
-			return (1);
-		}
+	else
+	{
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		mul = num1 * num2;
 
-		else
-		{
-			num1 = atoi(argv[i]);
-			num2 = atoi(argv[i]);
-			mul = num1 * num2;
+		printf("%d\n", mul);
 
-			printf("%d\n", mul);
-
-			return (0);
-		}
+		return (0);
 	}
 }
