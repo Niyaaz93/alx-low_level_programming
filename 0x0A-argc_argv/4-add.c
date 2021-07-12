@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 #include <stdbool.h>
+#include <stdlib.h>
 
 /**
  * num_check - checking if each argv in the array is a number
@@ -8,6 +9,7 @@
  *
  * Return: true only if the entire string are numbers, else returns false
  */
+
 bool num_check(char *argv_a)
 {
 	int a = 0;
