@@ -5,7 +5,7 @@
 
 /**
  * num_check - checking if each argv in the array is a number
- * @argv: argv value
+ * @argva: argv value
  *
  * Return: true only if the entire string are numbers, else returns false
  */
