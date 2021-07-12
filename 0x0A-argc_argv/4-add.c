@@ -10,13 +10,13 @@
  * Return: true only if the entire string are numbers, else returns false
  */
 
-bool num_check(char *argv_a)
+bool num_check(char *argva)
 {
 	int a = 0;
 
-	for (a = 0; argv_a[a]; a++)
+	for (a = 0; argva[a]; a++)
 	{
-		if (!(argv_a[a] >= 48 && argv_a[a] <= 57))
+		if (!(argva[a] >= '0' && argv_a[a] <= '9'))
 		{
 			return (0);
 		}
