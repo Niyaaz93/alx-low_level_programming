@@ -12,11 +12,11 @@
 
 bool num_check(char *argva)
 {
-	int a = 0;
+	int a;
 
 	for (a = 0; argva[a]; a++)
 	{
-		if (!(argva[a] >= '0' && argv_a[a] <= '9'))
+		if (!(argva[a] >= '0' && argva[a] <= '9'))
 		{
 			return (0);
 		}
