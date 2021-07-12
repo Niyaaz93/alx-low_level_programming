@@ -18,6 +18,7 @@ bool num_check(char *argva)
 		if (!(argva[j] >= '0' && argva[j] <= '9'))
 			return (0);
 	}
+
 	return (1);
 }
 
@@ -26,12 +27,12 @@ bool num_check(char *argva)
  * @argc: argument count containing number of arguments passed to program
  * @argv: argument vector containing array of strings
  *
- * Return: o (successful)
+ * Return: 0 (successful)
  */
 
 int main (int argc, char *argv[])
 {
-	int i;
+	int i = 1;
 	int sum = 0;
 
 	if (argc == 1)
@@ -41,7 +42,7 @@ int main (int argc, char *argv[])
 		return (0);
 	}
 
-	for (i = 1; i < argc; i++)
+	while (i < argc)
 	{
 		if (num_check(argv[i]))
 		{
@@ -54,6 +55,8 @@ int main (int argc, char *argv[])
 
 			return (1);
 		}
+
+		i++;
 	}
 
 	printf("%d\n", sum);
