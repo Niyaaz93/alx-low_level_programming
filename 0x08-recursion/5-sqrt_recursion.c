@@ -2,32 +2,27 @@
 
 /**
  * sqrt_test - function that test if for the sqrt of a num
- * @low: lower limit guess
+ * @low: root (guess)
  * @n: number to be evaluated
  *
  * Return: sqrt of the number given
  */
-float sqrt_test(float low, float n)
+int sqrt_test(int root, int n)
 {
-	float mid;
-
-	mid = (n + low) / 2;
-
-	if ((mid * mid) == n)
+	if ((root * root) == n)
 	{
-		return (mid);
-	}
-	else if ((n - low) < 0.001)
-	{
-		return (mid);
-	}
-	else if ((mid * mid) > n)
-	{
-		return (sqrt_test(low, mid));
+		return (root);
 	}
 	else
 	{
-		return (sqrt_test(mid, n));
+		if ((root * root) > n)
+		{
+			return (-1);
+		}
+		else
+		{
+			return (sqrt_test(root + 1, n));
+		}
 	}
 }
 
