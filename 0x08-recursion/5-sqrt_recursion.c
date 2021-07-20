@@ -17,16 +17,17 @@ int sqrt_test(int low, int n)
 	{
 		return (mid);
 	}
+	else if ((n - low) < 0.001)
+	{
+		return (mid);
+	}
+	else if ((mid * mid) > high)
+	{
+		return (sqrt_test(low, mid));
+	}
 	else
 	{
-		if ((mid * mid) > n)
-		{
-			return (sqrt_test(low, mid));
-		}
-		else
-		{
-			return (sqrt_test(mid, n));
-		}
+		return (sqrt(mid, n));
 	}
 }
 
