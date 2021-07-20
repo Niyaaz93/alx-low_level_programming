@@ -16,14 +16,14 @@ int is_pal(char *s, int start, int end)
 		return (1);
 	}
 
-	if (*s[start] != *s[end])
+	if (s[start] != s[end])
 	{
 		return (0);
 	}
 
 	if (start < end + 1)
 	{
-		return (is_pal(*s, start + 1, end - 1));
+		return (is_pal(s, start + 1, end - 1));
 	}
 
 	return (1);
@@ -56,7 +56,7 @@ int _strlen_recursion(char *s)
  */
 int is_palindrome(char *s)
 {
-	int n = _stlen_recursion(*s);
+	int n = _strlen_recursion(*s);
 
 	if (n == 0)
 	{
