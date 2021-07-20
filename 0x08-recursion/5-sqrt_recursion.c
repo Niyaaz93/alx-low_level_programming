@@ -2,8 +2,8 @@
 
 /**
  * sqrt_test - function that test if for the sqrt of a num
- * @num: number accpeted by function
- * @mid: iterator
+ * @low: lower limit guess
+ * @n: number to be evaluated
  *
  * Return: sqrt of the number given
  */
@@ -22,10 +22,6 @@ int sqrt_test(int low, int n)
 		if ((mid * mid) > n)
 		{
 			return (sqrt_test(low, mid));
-		}
-		else if ((n - low) < 0.001)
-		{
-			return (mid);
 		}
 		else
 		{
