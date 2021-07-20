@@ -33,7 +33,7 @@ int is_prime(int n, int i)
  */
 int is_prime_number(int n)
 {
-	int i;
+	int i = 2;
 
 	if (n <= 1)
 	{
