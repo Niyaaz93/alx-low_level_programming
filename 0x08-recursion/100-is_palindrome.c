@@ -63,5 +63,5 @@ int is_palindrome(char *s)
 		return (1);
 	}
 
-	return (*s, 0, n - 1);
+	return (is_pal(*s, 0, n - 1));
 }
