@@ -27,7 +27,7 @@ int sqrt_test(int low, int n)
 	}
 	else
 	{
-		return (sqrt(mid, n));
+		return (sqrt_test(mid, n));
 	}
 }
 
