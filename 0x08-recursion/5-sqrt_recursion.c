@@ -2,7 +2,7 @@
 
 /**
  * sqrt_test - function that test if for the sqrt of a num
- * @low: root (guess)
+ * @root: root (guess)
  * @n: number to be evaluated
  *
  * Return: sqrt of the number given
