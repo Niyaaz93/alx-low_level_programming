@@ -7,7 +7,7 @@
  *
  * Return: sqrt of the number given
  */
-int sqrt_test(int low, int n)
+float sqrt_test(float low, float n)
 {
 	float mid;
 
