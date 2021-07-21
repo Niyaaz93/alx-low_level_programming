@@ -3,7 +3,7 @@
 /**
  * main - function that prints the largest prime
  * factor of the number 612852475143
- *
+ * @void: no argument taken by main
  * Return: largest prime factor
  */
 
