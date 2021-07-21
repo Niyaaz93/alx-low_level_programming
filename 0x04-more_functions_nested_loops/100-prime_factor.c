@@ -7,7 +7,7 @@
  * Return: largest prime factor
  */
 
-int main()
+int main(void)
 {
 	long int n = 612852475143;
 	long int div = 2;
